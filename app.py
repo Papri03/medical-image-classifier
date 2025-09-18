@@ -37,7 +37,7 @@ if uploaded_file is not None:
         # Preprocess the image for the model
         # **IMPORTANT: REPLACE (150, 150) with your model's required input size**
         # For example, (256, 256), (224, 224), etc.
-        image_resized = image.resize((150, 150))
+        image_resized = image.resize((256, 256))
         
         # Convert image to a numpy array and ensure it's a float type
         img_array = np.array(image_resized).astype('float32')
