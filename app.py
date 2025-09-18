@@ -8,7 +8,7 @@ from PIL import Image
 def load_model():
     # This function loads your saved model
     # Make sure your brain tumor model file is named 'cifar10_model.h5'
-    model = tf.keras.models.load_model('cifar10_model.h5')
+    model = tf.keras.models.load_model('cifar10_model.keras')
     return model
 
 # Load the model and class names at the start of the app
