@@ -15,7 +15,7 @@ def load_model():
 model = load_model()
 
 # Define the class names for the dataset the model was trained on
-class_names = ['airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']
+class_names = ['Glioma', 'Meningioma', 'No Tumor', 'Pituitary'] 
 
 # 1. Design the web app interface
 st.title('Image Classification Demo')
