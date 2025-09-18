@@ -34,7 +34,7 @@ if uploaded_file is not None:
 
     # Preprocess the image for the model
     # The model was trained on 32x32 images
-    image_resized = image.resize((32, 32))
+    image_resized = image.resize((256, 256))
     img_array = np.array(image_resized)
     img_array = np.expand_dims(img_array, axis=0) # Create a batch
     img_array = img_array / 255.0 # Normalize pixel values
